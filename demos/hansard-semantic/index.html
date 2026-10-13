@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="data:," />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hansard, by meaning</title>
+  <meta name="description" content="Search energy debates from the Australian House of Representatives by meaning. The search runs in your browser." />
+  <script type="module" crossorigin src="/demos/hansard-semantic/assets/index-DM7Heqep.js"></script>
+  <link rel="stylesheet" crossorigin href="/demos/hansard-semantic/assets/index-Bv8dfHyy.css">
+</head>
+<body>
+  <header>
+    <h1>Hansard, by meaning</h1>
+    <p>Search energy debates from the House of Representatives by meaning, not only by exact words. Your query stays in this browser tab. The first visit downloads a 23 MB model.</p>
+  </header>
+  <main>
+    <form id="form" role="search">
+      <input id="q" type="search" placeholder="For example: who worries about the cost of new transmission lines?" autocomplete="off" aria-label="Search query" />
+      <button>Search</button>
+    </form>
+    <div class="examples" id="examples"></div>
+    <div class="filters">
+      <label>Party <select id="party"><option value="">All</option></select></label>
+      <span id="status" class="status" aria-live="polite">Loading the index…</span>
+    </div>
+    <div id="results"></div>
+  </main>
+  <footer id="foot"></footer>
+</body>
+</html>
